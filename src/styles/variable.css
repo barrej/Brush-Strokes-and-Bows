@@ -1,0 +1,15 @@
+:root {
+    --min-width: 10rem;
+    --max-width: 100%;
+    --header-height: 3rem;
+    --footer-height: var(--header-height);
+
+    --large-padding: 1rem;
+    --small-padding: calc(var(--large-padding) / 2);
+
+    --text: rgb(242, 238, 232);
+    --background: rgb(5, 5, 5);
+    --background-fade: rgba(255, 255, 255, 0.3);
+
+    --signpost-height: auto;
+}

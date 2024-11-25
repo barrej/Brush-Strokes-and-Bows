@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Brush Strokes and Bows</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+  <link rel="stylesheet" href="styles/variable.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tillana:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <img class="hero-image" src="assets/header.png" , alt="Brush Strokes and Bows logo" />
+    <nav class="navbar-container">
+      <h1 class="navbar-welcome"> Brush Strokes</h1>
+      <a href="https://uk.pinterest.com/brushstrokesandbows/" target="_blank" class="fa fa-pinterest"></a>
+      <a href="https://www.etsy.com/uk" target="_blank" class="fa fa-etsy"></a>
+      <a href="https://www.instagram.com/brushstrokesandbows/" target="_blank" class="fa fa-instagram"></a>
+    </nav>
+  </header>
+  <main>
+    <article> <h3>My paintings</h3><article>
+    <section class="slider-wrapper">
+      <button class="slide-arrow" id="slide-arrow-prev">
+          &#8249;
+      </button>
+      <button class="slide-arrow" id="slide-arrow-next">
+          &#8250;
+      </button>
+      <ul class="slides-container" id="slides-container">
+          <li class="slide" style="--painting-image: url('../assets/paintings/zima.jpeg')"></li>
+          <li class="slide" style="--painting-image: url('../assets/paintings/kot.jpeg')"></li>
+          <li class="slide" style="--painting-image: url('../assets/paintings/laka.jpeg')"></li>
+          <li class="slide" style="--painting-image: url('../assets/paintings/plaza.jpeg')"></li>
+          <li class="slide" style="--painting-image: url('../assets/paintings/bagna.jpeg')"></li>
+      </ul>
+      <script src="scripts/carousel.js"></script>
+  </section>
+  </main>
+  <footer>
+    <p>&copy;Brush Strokes and Bows</p>
+  </footer>
+</body>
+
+</html>
