@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="styles/variable.css" />
   <link rel="stylesheet" href="styles/styles.css" />
   <link rel="stylesheet" href="styles/carousel.css" />
+  <link rel="stylesheet" href="styles/contact-form.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- google font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,6 +46,32 @@
       </ul>
       <script src="scripts/carousel.js"></script>
   </section>
+  <section class="contact-form">
+    <form action="mailto:barbara.iwanek@gmail.com?subject=Contact%20Form" enctype="text/plain" method="post"
+          onsubmit="document.querySelector('section.contact-form').className += ' submitted'">
+        <!-- onsubmit code is run when the form is submitted, it will add an additional 
+            'submitted' class to the section.  It's not best practise to include JS in the HTML, 
+            it should be linked similar to CSS - see the JS classes for more details -->
+        <header>
+            <h2>Contact Me</h2>
+        </header>
+        <main>
+            <div>
+                <input name="name" placeholder="Name" required type="text"/>
+                <input name="reply-email" placeholder="Email address" required type="email"/>
+                <input name="message-subject" placeholder="Subject" required type="text"/>
+            </div>
+            <div>
+                <textarea name="message-body" placeholder="Message" required type="text"></textarea>
+            </div>
+            <div class="success">
+                <!-- This is hidden on initial view, but shown when the form is submitted -->
+                <p>Thanks for submitting your query!</p>
+            </div>
+        </main>
+        <footer><input type="submit" value="Submit"/></footer>
+    </form>
+</section>
   </main>
   <footer>
     <p>&copy;Brush Strokes and Bows</p>
