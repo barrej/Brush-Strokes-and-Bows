@@ -117,6 +117,28 @@ a:hover {
     text-decoration: underline;
 }
 
+section.profile {
+    min-height: calc(var(--header-height) * 6);
+
+    margin: var(--large-padding) 0;
+    padding: var(--large-padding);
+
+    display: grid;
+    flex: 1 0 auto;
+    /* Three values: flex-grow | flex-shrink | flex-basis */
+    gap: var(--small-padding);
+    grid-template-columns: auto auto;
+}
+
+section.profile img.profile {
+    width: calc(var(--header-height) * 5);
+    height: calc(var(--header-height) * 5);
+    float: right;
+    margin: var(--large-padding);
+    border-radius: 50%;
+    shape-outside: circle();
+}
+
 body>footer {
     display: flex;
     flex-direction: row;
